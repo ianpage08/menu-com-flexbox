@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html {
+    background-color: rgb(61, 61, 61);
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1em;
+
+}
+header {
+    
+    background-color: rgb(134, 130, 130);
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+}
+
+header > h1 {
+    color: aliceblue;
+    padding: 10px;
+    flex: 0 0 250px;
+    border: 4px dotted black;
+    align-self: flex-end;
+    
+}
+header > nav {
+    border: 2px dotted black;
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    
+}
+header > nav > a{
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+    margin: 3px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    
+    
+    
+    
+}
+header > nav > a:hover {
+    background-color: rgb(243, 242, 241);
+    color: black;
+    transition: 0.5s;
+}
+main {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 98vw;
+    
+    text-align: justify;
+
+
+}
+ @media screen and (max-width:600px) {
+    header > nav {
+        justify-content: center;
+        flex: column wrap;
+    }
+    nav > a {
+        flex: 0 0 450px;
+
+    }
+    
+ }
